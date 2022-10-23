@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="../style.css" rel="stylesheet" />
+    <link href="../../style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
     <title>DrivingRanges.co - Find the Best Driving Ranges Near You</title>
-    <link rel="icon" href="../assets/icons8-location-48.png">
+    <link rel="icon" href="../../assets/icons8-location-48.png">
+    
 
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-white navbar-light sticky-top">
         <div class="container-fluid">
-        <a href="../index.html" class="navbar-brand">DrivingRanges.Co ⛳</a>
+        <a href="../../index.html" class="navbar-brand">DrivingRanges.Co ⛳</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
@@ -33,7 +39,7 @@
                     <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../listrange.html" class="nav-link"><span class="border border-warning rounded p-2 bg-warning text-dark">List a Range (for free)</span></a>
+                    <a href="../../listrange.html" class="nav-link"><span class="border border-warning rounded p-2 bg-warning text-dark">List a Range (for free)</span></a>
             </ul>
         </div>
     </div>
@@ -44,8 +50,30 @@
         <section class="text-dark bg-light p-5">
             <h2 class="text-center p-2">Scottsdale Driving Ranges</h2>
         </section>
+
+        <!-- Scottsdale Map -->
+        <div class="container">
+            <div class="d-md-flex justify-content-center align-items-center">
+                <div id='scottsdaleMap'></div>
+            </div>
+        </div>        
+        <script>
+            var map = L.map('scottsdaleMap').setView([33.4942, -111.9261], 10);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+        //Coronado Golf Course
+        L.marker([33.479160, -111.916630]).addTo(map).bindPopup('<a href="../scottsdale/coronado.html" target="_blank">Coronado Golf Course and Driving Range</a>');
+
+        </script>
+
+            
+      
+
     
-   <!-- Map of driving Ranges
+   <!-- Map of driving Ranges. Leaflet.
     List of ranges with showcases. 
     Need to figure out how to js with multiple pages for driving ranges. -->
 
