@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-    <title>DrivingRanges.co - Find the Best Driving Ranges Near You</title>
+    <title>PublicGolfCourses.Co - Find the Best Public Golf Courses & Driving Ranges Near You</title>
     <link rel="icon" href="../../assets/icons8-location-48.png">
     
 
@@ -26,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-white navbar-light sticky-top">
         <div class="container-fluid">
-        <a href="../../index.html" class="navbar-brand">DrivingRanges.Co ⛳</a>
+        <a href="../../index.html" class="navbar-brand">PublicGolfCourses.Co ⛳</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
                     <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../listrange.html" class="nav-link"><span class="border border-warning rounded p-2 bg-warning text-dark">List a Range (for free)</span></a>
+                    <a href="../../listrange.html" class="nav-link"><span class="border border-warning rounded p-2 bg-warning text-dark">List a Course / Range (for free)</span></a>
             </ul>
         </div>
     </div>
@@ -48,7 +48,7 @@
         <!-- Intro Section -->
 
         <section class="text-dark bg-light p-5">
-            <h2 class="text-center p-2">Scottsdale Driving Ranges</h2>
+            <h2 class="text-center p-2">Phoenix / Scottsdale Public Golf Courses</h2>
         </section>
 
         <!-- Scottsdale Map -->
@@ -58,7 +58,7 @@
             </div>
         </div>        
         <script>
-            var map = L.map('scottsdaleMap').setView([33.4942, -111.9261], 10);
+            var map = L.map('scottsdaleMap').setView([33.448376, -112.074036], 10);
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -66,14 +66,87 @@
 
         //Coronado Golf Course
         L.marker([33.479160, -111.916630]).addTo(map).bindPopup('<a href="../scottsdale/coronado.html" target="_blank">Coronado Golf Course and Driving Range</a>');
-
+        //Valley Golf Center
+        L.marker([33.491581, -112.322571]).addTo(map).bindPopup('<a href="../scottsdale/valleygolf.html" target="_blank">Valley Golf Center</a>');
+        //Papago Golf Course
+        L.marker([33.461320, -111.961460]).addTo(map).bindPopup('<a href="../scottsdale/papago.html" target="_blank">Papago Golf Course</a>');
         </script>
 
             
     <!-- List of ranges with showcases. 
     Need to figure out how to js with multiple pages for driving ranges. -->
+    <section class="p-5">
+        <h3>
+            <a href="../scottsdale/coronado.html" target="_blank" class="link-dark">Coronado Golf Course and Driving Range</a>
+        </h3>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+            <a href="/cities/scottsdale/coronado.html" class="btn btn-warning" target="_blank">More Details...</a>
+            <a href="https://www.coronadogolfscottsdale.com/" class="btn btn-warning" target="_blank">Visit Website</a>
+          </div>
+         <hr> 
+         <!-- ----------------- -->
+         <h3>
+            <a href="../scottsdale/valleygolf.html" target="_blank" class="link-dark">Valley Golf Center</a>
+        </h3>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+            <a href="/cities/scottsdale/valleygolf.html" class="btn btn-warning" target="_blank">More Details...</a>
+            <a href="https://valleygolfcenteraz.com/" class="btn btn-warning" target="_blank">Visit Website</a>
+          </div>
+         <hr> 
+         <!-- ----------------- -->
+         <h3>
+            <a href="../scottsdale/papago.html" target="_blank" class="link-dark">Papago Golf Course</a>
+        </h3>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+            <a href="/cities/scottsdale/papago.html" class="btn btn-warning" target="_blank">More Details...</a>
+            <a href="https://papagogolfclub.com/" class="btn btn-warning" target="_blank">Visit Website</a>
+          </div>
+         <hr>
+         <!-- ----------------- -->
+         <h3>
+            <a href="../scottsdale/papago.html" target="_blank" class="link-dark">Grayhawk Golf Club</a>
+        </h3>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+            <a href="/cities/scottsdale/grayhawk.html" class="btn btn-warning" target="_blank">More Details...</a>
+            <a href="https://grayhawkgolf.com/" class="btn btn-warning" target="_blank">Visit Website</a>
+          </div>
+         <hr>
+
+    </section>
 
  
+    <!--City List-->
+    <section id="citylist" class="p-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between text-center">
+                <div class="col-md">
+                    <h4>Current Cities</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="../scottsdale/scottsdaleMap.html">Scottsdale, AZ</a></li>
+                        <li><a href="#">Anaheim, CA</a></li>
+                        <li><a href="#">Columbus, OH</a></li>
+                        <li><a href="#">Pittsburgh, PA</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="col-md p-5">
+                    <h4>Cities Launching Soon</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Laredo, TX</a></li>
+                        <li><a href="#">Dallas, TX</a></li>
+                        <li><a href="#">Tallahasee, FL</a></li>
+                        <li><a href="#">Newark, NJ</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Footer-->
     <footer class="p-5 bg-secondary text-white text-center position-relative">
         <div class="container">
