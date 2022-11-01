@@ -58,7 +58,7 @@
             </div>
         </div>        
         <script>
-            var map = L.map('scottsdaleMap').setView([33.448376, -112.074036], 10);
+            var map = L.map('scottsdaleMap').setView([33.448376, -112.074036], 9);
             L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -70,9 +70,15 @@
         L.marker([33.491581, -112.322571]).addTo(map).bindPopup('<a href="../scottsdale/valleygolf.html" target="_blank">Valley Golf Center</a>');
         //Papago Golf Course
         L.marker([33.461320, -111.961460]).addTo(map).bindPopup('<a href="../scottsdale/papago.html" target="_blank">Papago Golf Course</a>');
+         //Grayhawk Golf Course
+         L.marker([33.678089, -111.897392]).addTo(map).bindPopup('<a href="../scottsdale/grayhawk.html" target="_blank">Grayhawk Golf Club</a>');
+         //Raven Golf Club
+         L.marker([33.3808164,-112.0057638]).addTo(map).bindPopup('<a href="../scottsdale/raven.html" target="_blank">Raven Golf Club</a>');
+         //Mountain Shadows Golf
+         L.marker([33.5301676,-111.963653]).addTo(map).bindPopup('<a href="../scottsdale/mountainshadows.html" target="_blank">The Short Course at Mountain Shadows</a>');
         </script>
 
-            
+
     <!-- List of ranges with showcases. 
     Need to figure out how to js with multiple pages for driving ranges. -->
     <section class="p-5">
@@ -107,12 +113,32 @@
          <hr>
          <!-- ----------------- -->
          <h3>
-            <a href="../scottsdale/papago.html" target="_blank" class="link-dark">Grayhawk Golf Club</a>
+            <a href="../scottsdale/grayhawk.html" target="_blank" class="link-dark">Grayhawk Golf Club</a>
         </h3>
         <br>
         <div class="d-grid gap-2 d-md-block">
             <a href="/cities/scottsdale/grayhawk.html" class="btn btn-warning" target="_blank">More Details...</a>
             <a href="https://grayhawkgolf.com/" class="btn btn-warning" target="_blank">Visit Website</a>
+          </div>
+         <hr>
+         <!-- ----------------- -->
+         <h3>
+            <a href="../scottsdale/raven.html" target="_blank" class="link-dark">Raven Golf Club</a>
+        </h3>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+            <a href="/cities/scottsdale/raven.html" class="btn btn-warning" target="_blank">More Details...</a>
+            <a href="https://ravenphx.com/" class="btn btn-warning" target="_blank">Visit Website</a>
+          </div>
+         <hr>
+         <!-- ----------------- -->
+         <h3>
+            <a href="../scottsdale/mountainshadows.html" target="_blank" class="link-dark">The Short Course at Mountain Shadows</a>
+        </h3>
+        <br>
+        <div class="d-grid gap-2 d-md-block">
+            <a href="/cities/scottsdale/mountainshadows.html" class="btn btn-warning" target="_blank">More Details...</a>
+            <a href="https://www.mountainshadows.com/golf" class="btn btn-warning" target="_blank">Visit Website</a>
           </div>
          <hr>
 
